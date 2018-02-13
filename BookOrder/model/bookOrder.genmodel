@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/BookOrder/src" modelPluginID="BookOrder" modelName="BookOrder"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>bookOrder.ecore</foreignModel>
+  <genPackages prefix="BookOrder" disposableProviderFactory="true" ecorePackage="bookOrder.ecore#/">
+    <genClasses ecoreClass="bookOrder.ecore#//Universe">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bookOrder.ecore#//Universe/bookorder"/>
+    </genClasses>
+    <genClasses ecoreClass="bookOrder.ecore#//BookOrder">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bookOrder.ecore#//BookOrder/info"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bookOrder.ecore#//BookOrder/book"/>
+    </genClasses>
+    <genClasses ecoreClass="bookOrder.ecore#//Book">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bookOrder.ecore#//Book/title"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
